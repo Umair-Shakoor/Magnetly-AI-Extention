@@ -24,7 +24,7 @@
     ],
     "externally_connectable": {
         "matches": [
-            "http://localhost:3000/*"
+            "http://5.189.136.198:3000/*"
         ]
     },
     "web_accessible_resources": [
