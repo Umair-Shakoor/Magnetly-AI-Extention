@@ -1,38 +1,41 @@
 {
-    "manifest_version": 3,
-    "name": "My Extension",
-    "version": "1.0",
-    "background": {
-        "service_worker": "background.js"
-    },
-    "permissions": [
-        "tabs",
-        "storage"
-    ],
-    "host_permissions": [
+  "manifest_version": 3,
+  "name": "My Extension",
+  "version": "1.0",
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": [
+    "tabs",
+    "storage",
+    "alarms"
+  ],
+  "host_permissions": [
+    "https://*.linkedin.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
         "https://*.linkedin.com/*"
-    ],
-    "content_scripts": [
-        {
-            "matches": [
-                "https://*.linkedin.com/*"
-            ],
-            "js": [
-                "contentScript.js"
-            ]
-        }
-    ],
-    "externally_connectable": {
-        "matches": [
-            "http://5.189.136.198:3000/*"
-        ]
-    },
-    "web_accessible_resources": [
+      ],
+      "js": [
+        "contentScript.js"
+      ]
+    }
+  ],
+  "externally_connectable": {
+    "matches": [
+      "http://localhost:3000/*"
+    ]
+  },
+  "web_accessible_resources": [
     {
       "resources": [
         "assets/logo.gif"
       ],
-      "matches": ["https://*.linkedin.com/*"]
+      "matches": [
+        "https://*.linkedin.com/*"
+      ]
     }
   ]
 }
