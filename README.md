@@ -20,6 +20,10 @@ A powerful AI-driven LinkedIn automation tool that helps you build connections, 
 - **Faster Message Reading**: Enhanced speed for reading and processing incoming messages
 - **Faster Follow-ups**: Optimized follow-up message delivery system
 
+### Version 1.3
+- **LinkedIn UI Updates**: Enhanced compatibility with LinkedIn's interface changes
+- **Efficient Campaign**: Efficiently reading active campaign status 
+
 ## 📥 Installation
 
 ### Step 1: Download the Extension
